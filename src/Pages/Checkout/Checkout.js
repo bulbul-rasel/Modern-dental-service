@@ -19,20 +19,19 @@ const Checkout = () => {
         <div className='register-form'>
             <h2 className='text-info text-center'>Checkout Details</h2>
             <form onSubmit={handleCheckout}>
-                <input disabled={!agree} className='bg-dark text-white' type="text" placeholder='Enter your name' required />
                 <input
-                    disabled={!agree}
+                    className='bg-dark text-white'
+                    type="text" placeholder='Enter your name' required />
+                <input
                     className='bg-dark text-white'
                     type="email" name="email" id=""
                     placeholder='Please Enter Email' required />
 
                 <input
-                    disabled={!agree}
                     className='bg-dark text-white' type="text"
                     placeholder='Enter Address' required />
 
                 <input
-                    disabled={!agree}
                     className='bg-dark text-white' type="text"
                     placeholder='Enter Phone  Number' required />
 
@@ -47,7 +46,7 @@ const Checkout = () => {
                     disabled={!agree}
                     onClick={handleSubmit}
                     className='w-100 rounded-pill btn btn-info'
-                    type="submit"
+                    type="button"
                     value="Checkout" required />
             </form>
 

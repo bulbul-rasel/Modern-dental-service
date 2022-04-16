@@ -8,7 +8,7 @@ const About = () => {
         <div>
             <div className="container">
                 <div className="banner d-flex row">
-                    <div className="banner-left col-sm-18 col-md-8 col-lg-8 ">
+                    <div className="banner-left col-sm-12 col-md-8 ">
                         <div>
                             <h1 className="banner-title">BULBUL RASEL</h1>
                             <p className="banner-text">Hey i'm Bulbul Rasel. I'm experienced at Professional Web and Graphic
@@ -23,7 +23,7 @@ const About = () => {
                             <Button className="btn">Click Here</Button>
                         </div>
                     </div>
-                    <div className="banner-right col-sm-12 col-md-12 col-lg-4">
+                    <div className="banner-right col-sm-12 col-md-4 center-block d-block mx-auto">
                         <img src={img} alt="" />
                     </div>
                 </div>
