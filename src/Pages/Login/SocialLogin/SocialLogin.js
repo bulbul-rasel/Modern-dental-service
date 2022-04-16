@@ -1,0 +1,55 @@
+import React from 'react';
+import glogo from '../../../image/glogo.png'
+import flogo from '../../../image/facebook.png'
+import gitlogo from '../../..//image/github.png'
+import { useSignInWithGoogle, useSignInWithGithub } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { useNavigate } from 'react-router-dom';
+
+const SocialLogin = () => {
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const navigate = useNavigate();
+    let errorElement;
+
+    if (error || error1) {
+        errorElement = <p className='text-danger'>Error: {error?.message}  {error1?.message}</p>
+    }
+    if (loading || loading1) {
+        return <p>Loading...</p>
+    }
+    if (user || user1) {
+        navigate('/home')
+    }
+    return (
+        <div>
+            <div className='d-flex align-items-center'>
+                <div style={{ height: "1px" }} className='w-50 bg-primary'></div>
+                <p className='mb-2 mx-2'>or</p>
+                <div style={{ height: "1px" }} className='w-50 bg-primary'></div>
+            </div>
+            <div>
+                {errorElement}
+                <button
+                    onClick={() => signInWithGoogle()}
+                    className='btn btn-info w-100 rounded-pill mb-3'>
+                    <img style={{ width: "30px" }} src={glogo} alt="" />
+                    Google Sign in
+                </button>
+                <button
+                    className='btn btn-primary w-100 rounded-pill mb-3'>
+                    <img style={{ width: "30px" }} src={flogo} alt="" />
+                    FaceBook Sign in
+                </button>
+                <button
+                    onClick={() => signInWithGithub()}
+                    className='btn btn-dark w-100 rounded-pill'>
+                    <img style={{ width: "30px" }} src={gitlogo} alt="" />
+                    GitHub Sign in
+                </button>
+            </div>
+        </div>
+    );
+};
+
+export default SocialLogin;
