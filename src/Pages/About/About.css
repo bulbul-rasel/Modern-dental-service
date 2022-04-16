@@ -20,10 +20,13 @@ body {
 .banner {
     display: flex;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-left {
     flex: 1;
+    order: 2;
     color: #fff;
     display: flex;
     align-items: center;
@@ -37,6 +40,7 @@ body {
 }
 
 .banner-right img {
+    order: 1;
     width: 80%;
     border: 5px solid #22bedd;
 }

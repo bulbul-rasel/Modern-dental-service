@@ -1,9 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import { useLocation } from 'react-router-dom';
+
 
 const Checkout = () => {
+    const [agree, setAgree] = useState(false);
+    const location = useLocation();
+    const handleCheckout = (event) => {
+        event.preventDefault();
+    }
+
+    const handleSubmit = () => {
+        toast('Thanks for Checking Out');
+        location("/checkout");
+    }
     return (
-        <div>
-            <h2>Thanks for CheckOut</h2>
+        <div className='register-form'>
+            <h2 className='text-info text-center'>Checkout Details</h2>
+            <form onSubmit={handleCheckout}>
+                <input disabled={!agree} className='bg-dark text-white' type="text" placeholder='Enter your name' required />
+                <input
+                    disabled={!agree}
+                    className='bg-dark text-white'
+                    type="email" name="email" id=""
+                    placeholder='Please Enter Email' required />
+
+                <input
+                    disabled={!agree}
+                    className='bg-dark text-white' type="text"
+                    placeholder='Enter Address' required />
+
+                <input
+                    disabled={!agree}
+                    className='bg-dark text-white' type="text"
+                    placeholder='Enter Phone  Number' required />
+
+                <input
+                    onClick={() => setAgree(!agree)}
+                    type="checkbox" name="terms" id="terms" />
+
+                <label
+                    className={agree ? "" : "text-info"}
+                    htmlFor="terms"> Accept Terms and Condition?</label>
+                <input
+                    disabled={!agree}
+                    onClick={handleSubmit}
+                    className='w-100 rounded-pill btn btn-info'
+                    type="submit"
+                    value="Checkout" required />
+            </form>
+
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

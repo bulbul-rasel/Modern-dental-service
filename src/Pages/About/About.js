@@ -7,8 +7,8 @@ const About = () => {
     return (
         <div>
             <div className="container">
-                <div className="banner">
-                    <div className="banner-left">
+                <div className="banner d-flex row">
+                    <div className="banner-left col-sm-18 col-md-8 col-lg-8 ">
                         <div>
                             <h1 className="banner-title">BULBUL RASEL</h1>
                             <p className="banner-text">Hey i'm Bulbul Rasel. I'm experienced at Professional Web and Graphic
@@ -23,7 +23,7 @@ const About = () => {
                             <Button className="btn">Click Here</Button>
                         </div>
                     </div>
-                    <div className="banner-right">
+                    <div className="banner-right col-sm-12 col-md-12 col-lg-4">
                         <img src={img} alt="" />
                     </div>
                 </div>

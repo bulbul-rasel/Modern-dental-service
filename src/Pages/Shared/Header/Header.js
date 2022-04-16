@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
@@ -20,11 +20,11 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="home#services">Services</Nav.Link>
+                            <Nav.Link className={({ isActive }) => (isActive ? "active-link" : "link")} href="home#services">Services</Nav.Link>
                             <Nav.Link href="home#blogs">Blogs</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link className='mt-2' as={Link} to="about">About</Nav.Link>
                             {
                                 user ?
                                     <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
