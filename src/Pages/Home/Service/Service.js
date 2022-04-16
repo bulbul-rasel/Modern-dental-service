@@ -13,9 +13,9 @@ const Service = ({ service }) => {
         <div className='container'>
             <div className='service  shadow-lg'>
                 <img className='w-100 ' src={img} alt="" />
-                <h2>{name}</h2>
-                <p>Fee: {price}</p>
-                <p> <small>{description}</small></p>
+                <h2 className='title'>{name}</h2>
+                <p className='fee'>Fee: {price}</p>
+                <p className='description'> <small>{description}</small></p>
                 <button onClick={() => navigateToServiceDetail(id)} className='btn btn-primary'>{name}</button>
             </div>
         </div>

@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@500;600;700&family=Russo+One&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1b1919;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+}
+
+.banner-left {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.banner-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right img {
+    width: 80%;
+    border: 5px solid #22bedd;
+}
+
+.banner-title {
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+
+.banner-title::before {
+    content: 'BULBUL RASEL';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22bedd;
+    animation: typing 3s linear infinite;
+}
+
+.btn {
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #22bedd;
+    color: white;
+    border: 4px solid #22bedd;
+    cursor: pointer;
+    transition: .3s linear;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #22bedd;
+}
+
+.banner-text {
+    margin: 10px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes typing {
+    0% {
+        content: '।';
+    }
+
+    5% {
+        content: 'B।';
+    }
+
+    10% {
+        content: 'BU।';
+    }
+
+    15% {
+        content: 'BUL।';
+    }
+
+    20% {
+        content: 'BULB।';
+    }
+
+    25% {
+        content: 'BULBU।';
+    }
+
+    30% {
+        content: 'BULBUL।';
+    }
+
+    35% {
+        content: 'BULBUL ।';
+    }
+
+    40% {
+        content: 'BULBUL R।';
+    }
+
+    45% {
+        content: 'BULBUL RA।';
+    }
+
+    50% {
+        content: 'BULBUL RAS।';
+    }
+
+    55% {
+        content: 'BULBUL RASE।';
+    }
+
+    60% {
+        content: 'BULBUL RASEL।';
+    }
+
+    /* 65%{
+        content: 'BULBUL RASEL';
+    }
+    70%{
+        content: 'BULBUL RASEL।';
+    }
+    75%{
+        content: 'BULBUL RASEL';
+    } */
+    80% {
+        content: 'BULBUL RASEL।';
+    }
+
+    82% {
+        content: 'BULBUL RAS।';
+    }
+
+    84% {
+        content: 'BULBUL RA।';
+    }
+
+    86% {
+        content: 'BULBUL R।';
+    }
+
+    98% {
+        content: 'BULBUL ।';
+    }
+
+    90% {
+        content: 'BULB।';
+    }
+
+    92% {
+        content: 'BUL।';
+    }
+
+    94% {
+        content: 'BU।';
+    }
+
+    96% {
+        content: 'B।';
+    }
+
+    98%,
+    100% {
+        content: '';
+    }
+
+
+
+
+}

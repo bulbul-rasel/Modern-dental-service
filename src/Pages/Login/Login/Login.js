@@ -62,22 +62,22 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto '>
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
+            <h2 className='text-info text-center mt-2'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    <Form.Control className='bg-dark text-white' ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    <Form.Control className='bg-dark text-white' ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 <Button className='mx-auto w-100 rounded-pill' variant="primary" type="submit">
                     Login
                 </Button>
-                <p>New to Modern Dental? <Link to={'/register'} className='test-danger text-decoration-none' onClick={navigateRegister}> Please Register</Link ></p>
-                <p>Forget Password? <button className='btn btn-link text-primary text-decoration-none ' onClick={resetPassword}> Reset Password </button ></p>
+                <p>New to Modern Dental? <Link to={'/register'} className='text-info text-decoration-none' onClick={navigateRegister}> Please Register</Link ></p>
+                <p>Forget Password? <button className='btn btn-link text-white text-decoration-none ' onClick={resetPassword}> Reset Password </button ></p>
             </Form>
             <SocialLogin></SocialLogin>
             <ToastContainer />

@@ -1,6 +1,12 @@
 .service {
-    border: 1px solid lightgray;
+    border: 1px solid #22bedd;
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+.title,
+.description,
+.fee {
+    color: #22bedd;
 }

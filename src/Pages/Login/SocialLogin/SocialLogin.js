@@ -2,23 +2,24 @@ import React from 'react';
 import glogo from '../../../image/glogo.png'
 import flogo from '../../../image/facebook.png'
 import gitlogo from '../../..//image/github.png'
-import { useSignInWithGoogle, useSignInWithGithub } from 'react-firebase-hooks/auth';
+import { useSignInWithGoogle, useSignInWithGithub, useSignInWithFacebook } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
     let errorElement;
 
-    if (error || error1) {
+    if (error || error1 || error2) {
         errorElement = <p className='text-danger'>Error: {error?.message}  {error1?.message}</p>
     }
-    if (loading || loading1) {
+    if (loading || loading1 || loading2) {
         return <p>Loading...</p>
     }
-    if (user || user1) {
+    if (user || user1 || user2) {
         navigate('/home')
     }
     return (
@@ -37,6 +38,7 @@ const SocialLogin = () => {
                     Google Sign in
                 </button>
                 <button
+                    onClick={() => signInWithFacebook()}
                     className='btn btn-primary w-100 rounded-pill mb-3'>
                     <img style={{ width: "30px" }} src={flogo} alt="" />
                     FaceBook Sign in
