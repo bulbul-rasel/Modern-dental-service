@@ -11,15 +11,12 @@ const About = () => {
                     <div className="banner-left col-sm-12 col-md-8 ">
                         <div>
                             <h1 className="banner-title">BULBUL RASEL</h1>
-                            <p className="banner-text">Hey i'm Bulbul Rasel. I'm experienced at Professional Web and Graphic
-                                Designer.
-                                I'm Expert with Adobe Suite in Logo, Business Card, Flyer, Illustration, Stationary, Magazine
-                                design and others areas. In Web Design I'm expart wordpress, HTML5, CSS3,ReactJs, Nodejs. I have
-                                completed so many project
-                                and works Differents companies as a Web and Graphic Designer. I enjoy collaborating with my
-                                client and try to fullfill their requirment as an professional Graphic Designer and Web Designer
-                                I try to fulfill their expectation. I really enjoyed If i can help youwith my unique design to
-                                achiving your target. Thanks you for being with BULBUL RASEL...</p>
+                            <p className="banner-text">Thi is me,Bulbul Ahammed Rasel. I'm experienced at  Web development.
+                                And  Expert with HTML5, CSS3, javaScript, ReactJs, Firebase, Nodejs. I have
+                                completed so many Different project
+                                as a Web  Developer. I enjoy to doing something new and that is may personal satisfaction. <br />
+                                Next 5 years, I want to be a leading web developer all over the countries. I want to built my carrier with a professional web developer. <br />
+                                Thanks you for being with BULBUL RASEL...</p>
                             <Button className="btn">Click Here</Button>
                         </div>
                     </div>

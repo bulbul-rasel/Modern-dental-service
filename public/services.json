@@ -3,42 +3,42 @@
         "id": 1,
         "name": "TOOTH CLEANING",
         "price": "500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "For keeping you everyday SMILE, Our tooth should clean",
         "img": "https://i.ibb.co/TKx1W74/img01.jpg"
     },
     {
         "id": 2,
         "name": "ROOT CANNEL",
         "price": "3000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Survive with tooth..! Root cannel is life saviour for mouth.",
         "img": "https://i.ibb.co/PCNnK6y/img0.jpg"
     },
     {
         "id": 3,
         "name": "TOOTH FILLING",
         "price": "1000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "This is the first phase of tooth damage, Do it and SMILE.",
         "img": "https://i.ibb.co/S0Xfqpr/img4.jpg"
     },
     {
         "id": 4,
         "name": "TOOTH CAP",
         "price": "5000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Broken tooth..! No problem...  Capped your tooth and SMILE",
         "img": "https://i.ibb.co/FWCmqGc/img9.jpg"
     },
     {
         "id": 5,
         "name": "BRACE",
         "price": "10000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Are you sad about your tooth structure..! Do it and SMILE",
         "img": "https://i.ibb.co/Ny9wx4Y/img7.jpg"
     },
     {
         "id": 6,
         "name": "MOUTH ULCER",
         "price": "500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/3yP2n7k/img6.jpg"
+        "description": "Protecting mouth oh this is very important for ALL.",
+        "img": "https://i.ibb.co/VJV1shV/img.jpg"
     }
 ]

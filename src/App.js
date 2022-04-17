@@ -10,6 +10,7 @@ import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import Subscribe from './Pages/Subscribe/Subscribe';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/subscribe' element={<Subscribe />}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/checkout' element={
