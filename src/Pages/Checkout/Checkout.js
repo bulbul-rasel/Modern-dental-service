@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 
 const Checkout = () => {
+    const { serviceId } = useParams();
     const [agree, setAgree] = useState(false);
     const location = useLocation();
     const handleCheckout = (event) => {

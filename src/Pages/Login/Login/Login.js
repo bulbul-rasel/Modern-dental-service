@@ -10,7 +10,6 @@ import { sendPasswordResetEmail } from 'firebase/auth';
 
 
 const Login = () => {
-
     const [
         signInWithEmailAndPassword,
         user,
@@ -77,7 +76,9 @@ const Login = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control className='bg-dark text-white' ref={passwordRef} type="password" placeholder="Password" required />
+                    <Form.Control className='bg-dark text-white' ref={passwordRef} type="password" placeholder="Password" required
+                    />
+
                 </Form.Group>
                 <Button className='mx-auto w-100 rounded-pill' variant="primary" type="submit">
                     Login
