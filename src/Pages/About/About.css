@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: #1b1919;
     /* font-family: 'Permanent Marker', cursive; */
     font-family: 'Russo One', sans-serif;
@@ -19,21 +20,20 @@ body {
 
 .banner {
     display: flex;
-    height: 100vh;
+    height: 120vh;
     align-items: center;
     justify-content: center;
 }
 
 .banner-left {
-    flex: 1;
     order: 2;
     color: #fff;
     display: flex;
     align-items: center;
+
 }
 
 .banner-right {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,12 +41,12 @@ body {
 
 .banner-right img {
     order: 1;
-    width: 80%;
+    width: 90%;
     border: 5px solid #22bedd;
 }
 
 .banner-title {
-    font-size: 60px;
+    font-size: 40px;
     white-space: nowrap;
     position: relative;
     color: transparent;
@@ -136,15 +136,18 @@ body {
         content: 'BULBUL RASEL।';
     }
 
-    /* 65%{
+    65% {
         content: 'BULBUL RASEL';
     }
-    70%{
-        content: 'BULBUL RASEL।';
-    }
-    75%{
+
+    70% {
         content: 'BULBUL RASEL';
-    } */
+    }
+
+    75% {
+        content: 'BULBUL RASEL';
+    }
+
     80% {
         content: 'BULBUL RASEL।';
     }

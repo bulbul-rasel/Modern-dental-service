@@ -19,7 +19,7 @@ const Subscribe = () => {
         location("/subscribe");
     }
     return (
-        <div id='subscribe' className='row container'>
+        <div id='subscribe' className='row container w-100'>
             <div className='register-form col-md-6 col-sm-12'>
                 <h2 className='text-info text-center mb-3'>Give Your Feedback</h2>
                 <form onSubmit={handleCheckout}>

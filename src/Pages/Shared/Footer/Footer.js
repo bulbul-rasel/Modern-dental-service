@@ -8,7 +8,7 @@ const Footer = () => {
     const year = today.getFullYear();
     return (
 
-        < div className='row d-flex mt-5'>
+        < div className='row d-flex mt-5 w-100'>
             <div className='col-sm-12 col-md-6'>
                 <p className='text-center mt-5 text-info'>  &copy; copyright {year} All Rights Reserve Modern Dental Service</p>
             </div>
