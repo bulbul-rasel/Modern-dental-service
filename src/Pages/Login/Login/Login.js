@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 
 const Login = () => {
@@ -49,10 +50,15 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
+        console.log(email);
+
 
         if (email) {
-            updatePassword(email);
-            toast("Email Sent");
+            sendPasswordResetEmail(auth, email)
+                .then(() => {
+                    toast("Email Sent");
+                }, [])
+
         } else {
             toast("Enter Your Email");
         }
