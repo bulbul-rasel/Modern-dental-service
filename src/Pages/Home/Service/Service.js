@@ -5,6 +5,7 @@ import './Service.css'
 const Service = ({ service }) => {
     const { name, img, description, price } = service;
 
+
     return (
         <div className='container mb-5 w-100'>
             <div className='service  shadow-lg p-3'>

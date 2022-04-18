@@ -55,7 +55,7 @@ const Subscribe = () => {
 
             </div>
             <div className=' col-md-6 col-sm-12'>
-                <h2 className='text-info text-center'>Please Subscribe</h2>
+                <h2 className='text-info text-center'>Please Subscribe On</h2>
 
                 <button
                     className='btn btn-primary w-100 rounded-pill my-3'>

@@ -5,7 +5,6 @@ import { useLocation, useParams } from 'react-router-dom';
 
 
 const Checkout = () => {
-    const { serviceId } = useParams();
     const [agree, setAgree] = useState(false);
     const location = useLocation();
     const handleCheckout = (event) => {
