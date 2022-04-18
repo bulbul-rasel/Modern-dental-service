@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { useLocation, useParams } from 'react-router-dom';
-
 
 const Checkout = () => {
     const [agree, setAgree] = useState(false);
-    const location = useLocation();
     const handleCheckout = (event) => {
         event.preventDefault();
+        toast('Thanks you for the booking');
     }
 
-    const handleSubmit = () => {
-        toast('Thanks for Checking Out');
-        location("/checkout");
-    }
     return (
         <div className='register-form'>
             <h2 className='text-info text-center'>Checkout Details</h2>
@@ -44,9 +38,8 @@ const Checkout = () => {
                     htmlFor="terms"> Accept Terms and Condition?</label>
                 <input
                     disabled={!agree}
-                    onClick={handleSubmit}
                     className='w-100 rounded-pill btn btn-info'
-                    type="button"
+                    type="submit"
                     value="Checkout" required />
             </form>
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { useLocation } from 'react-router-dom';
 
 import flogo from '../../image/facebook.png'
 import ulogo from '../../image/ulogo.png'
@@ -9,15 +8,11 @@ import ilogo from '../../image/ilogo.png'
 
 const Subscribe = () => {
     const [agree, setAgree] = useState(false);
-    const location = useLocation();
     const handleCheckout = (event) => {
         event.preventDefault();
+        toast('Thanks for giving feedback');
     }
 
-    const handleSubmit = () => {
-        toast('Thanks for giving feedback');
-        location("/subscribe");
-    }
     return (
         <div id='subscribe' className='row container w-100'>
             <div className='register-form col-md-6 col-sm-12'>
@@ -46,9 +41,8 @@ const Subscribe = () => {
                         htmlFor="terms"> Accept Terms and Condition?</label>
                     <input
                         disabled={!agree}
-                        onClick={handleSubmit}
                         className='w-100 rounded-pill btn btn-info'
-                        type="button"
+                        type="submit"
                         value="Submit Feedback" required />
                 </form>
 
